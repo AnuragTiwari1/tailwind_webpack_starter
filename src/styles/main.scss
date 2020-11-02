@@ -1,0 +1,15 @@
+@tailwind base;
+
+@tailwind components;
+
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+@import "uikit/src/scss/uikit-theme.scss";
+
+@tailwind utilities;
+
+$body-color: pink;
+
+body {
+  background-color: $body-color;
+}
