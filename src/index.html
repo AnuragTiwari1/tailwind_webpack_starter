@@ -4,54 +4,124 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind with webpack</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>hot reload test</h1>
-    <ul uk-accordion>
-      <li class="uk-open">
-        <a class="uk-accordion-title" href="#">Item 1</a>
-        <div class="uk-accordion-content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </li>
-      <li>
-        <a class="uk-accordion-title" href="#">Item 2</a>
-        <div class="uk-accordion-content">
-          <p>
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            reprehenderit.
-          </p>
-        </div>
-      </li>
-      <li>
-        <a class="uk-accordion-title" href="#">Item 3</a>
-        <div class="uk-accordion-content">
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat proident.
-          </p>
-        </div>
-      </li>
-    </ul>
-
-    <div class="uk-inline">
-      <button class="uk-button uk-button-default" type="button">Hover</button>
-      <div uk-dropdown>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt.
-      </div>
-    </div>
-
-    <div class="uk-inline">
-      <button class="uk-button uk-button-default" type="button">Click</button>
-      <div uk-dropdown="mode: click">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt.
+  <body class="font-sans">
+    <div class="main-layout bg-green-500">
+      <div class="phone pt-16 px-12">
+        <header class="flex items-center justify-between">
+          <img
+            src="https://img.pngio.com/crunchyroll-forum-crunchyrolls-t-shirt-design-contest-winner-crunchyroll-logo-transparent-466_489.png"
+            alt="Logo"
+            class="h-12 object-cover"
+          />
+          <span uk-icon="icon: search"></span>
+        </header>
+        <nav class="my-12">
+          <ul class="flex whitespace-no-wrap items-center justify-between">
+            <li>
+              <a
+                class="inline-block font-medium leading-none text-2xl text-gray-500 nav__active"
+                href="#"
+                >Popular</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block font-medium leading-none text-2xl text-gray-500"
+                href="#"
+                >Genres</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block font-medium leading-none text-2xl text-gray-500"
+                href="#"
+                >A to Z</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block font-medium leading-none text-2xl text-gray-500"
+                href="#"
+                >Seasons</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <main class="main_container">
+          <div>
+            <figure class="mb-3">
+              <img
+                src="https://cdn.europosters.eu/image/1300/posters/one-punch-man-season-2-i86559.jpg"
+                alt="one-punch-man-season-2"
+                width="100%"
+                class="rounded-md"
+              />
+            </figure>
+            <figcaption>
+              <p class="font-bold text-2xl flex justify-between tracking-wider">
+                One-Punch Man
+                <span class="text-orange-500" uk-icon="icon: bookmark"></span>
+              </p>
+              <p class="text-2xl text-gray-500 font-medium">12 Videos</p>
+            </figcaption>
+          </div>
+          <div class="shift-down">
+            <figure class="mb-3">
+              <img
+                src="https://cdn.europosters.eu/image/1300/posters/one-punch-man-season-2-i86559.jpg"
+                alt="one-punch-man-season-2"
+                width="100%"
+                class="rounded-md"
+              />
+            </figure>
+            <figcaption>
+              <p class="font-bold text-2xl flex justify-between tracking-wider">
+                One-Punch Man
+                <span class="text-orange-500" uk-icon="icon: bookmark"></span>
+              </p>
+              <p class="text-2xl text-gray-500 font-medium">12 Videos</p>
+            </figcaption>
+          </div>
+          <div>
+            <figure class="mb-3">
+              <img
+                src="https://cdn.europosters.eu/image/1300/posters/one-punch-man-season-2-i86559.jpg"
+                alt="one-punch-man-season-2"
+                width="100%"
+                class="rounded-md"
+              />
+            </figure>
+            <figcaption>
+              <p class="font-bold text-2xl flex justify-between tracking-wider">
+                One-Punch Man
+                <span class="text-orange-500" uk-icon="icon: bookmark"></span>
+              </p>
+              <p class="text-2xl text-gray-500 font-medium">12 Videos</p>
+            </figcaption>
+          </div>
+          <div class="shift-down">
+            <figure class="mb-3">
+              <img
+                src="https://cdn.europosters.eu/image/1300/posters/one-punch-man-season-2-i86559.jpg"
+                alt="one-punch-man-season-2"
+                width="100%"
+                class="rounded-md"
+              />
+            </figure>
+            <figcaption>
+              <p class="font-bold text-2xl flex justify-between tracking-wider">
+                One-Punch Man
+                <span class="text-orange-500" uk-icon="icon: bookmark"></span>
+              </p>
+              <p class="text-2xl text-gray-500 font-medium">12 Videos</p>
+            </figcaption>
+          </div>
+        </main>
       </div>
     </div>
   </body>

@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+@import "uikit/src/scss/uikit-theme.scss";
+
+@layer components {
+  .section-heading {
+    @apply font-bold text-2xl;
+  }
+
+  .section-paragraph {
+    @apply font-hairline;
+  }
+}
+
+@tailwind utilities;

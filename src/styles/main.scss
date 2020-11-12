@@ -1,15 +1,105 @@
-@tailwind base;
+@import "vendor.scss";
 
-@tailwind components;
+//css reset:
+html,
+body,
+blockquote,
+code,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
+  margin: 0;
+  padding: 0;
+}
+button,
+fieldset,
+form,
+input,
+legend,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+fieldset {
+  border: 0;
+}
+a,
+a:active {
+  cursor: pointer;
+  text-decoration: none;
+}
+div {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  text-align: left;
+}
+hr,
+img {
+  border: 0;
+}
+applet,
+iframe,
+object {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="image"],
+input[type="reset"],
+input[type="submit"],
+label {
+  cursor: pointer;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
 
-@import "uikit/src/scss/variables-theme.scss";
-@import "uikit/src/scss/mixins-theme.scss";
-@import "uikit/src/scss/uikit-theme.scss";
+html {
+  font-size: 62.5%;
+}
+//css reset ends
 
-@tailwind utilities;
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr[phone-start] 36rem [phone-end]1fr;
 
-$body-color: pink;
+  .phone {
+    grid-column: phone-start/phone-end;
+    height: 64rem;
+    background-color: white;
+  }
+}
 
-body {
-  background-color: $body-color;
+.nav__active {
+  font-size: 2rem;
+  color: black;
+  font-weight: 600;
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem;
+}
+
+.shift-down {
+  transform: translateY(3rem);
 }
